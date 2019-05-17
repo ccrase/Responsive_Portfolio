@@ -57,7 +57,6 @@ hr{
     margin-bottom: 20px;
 }
 section{
-    position: static;
     width: 70%;
     background-color: #ffffff;
     border: solid 0.5px #dddddd;
@@ -77,13 +76,12 @@ p{
     width: 250px;
 }
 figure{
-    float: left;
     width: 25%;
     max-width: 25%;
-    position: relative;
+    float: left;
+    display: block;
 }
 .p-img{
-    display: block;
     width: 100%;
 }
 .top{
@@ -96,6 +94,8 @@ figcaption{
     background-color: #4aaaa5;
     color: #ffffff;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: -10px;
     padding: 20px;
 }
 form{
@@ -133,4 +133,19 @@ footer{
     font-size: 12px;    
     border-top: 7px solid #B863A9;
 
+}
+
+@media screen and (max-width: 980px){
+    section{
+        margin-right: 200px;
+    }
+    .heading{
+        margin-left: 50px;
+    }
+    .top{
+        float: none;
+    }
+    .bottom{
+        float: none;
+    }
 }
